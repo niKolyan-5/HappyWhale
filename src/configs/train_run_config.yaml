@@ -1,0 +1,3 @@
+model_config: '../configs/model_configs/dolgnet_model_config.yml'
+data_config: '../configs/data_configs/happy_whale_data_config.yaml'
+train_config: '../configs/train_configs/happy_whale_train_config.yml'

@@ -1,0 +1,19 @@
+model_name: 'dolgnet'
+model_save_path: '../../model_weights'
+model_save_name: 'tf_efficientnet_b5_dolgnet_v1'
+model_parameters:
+  emb_size: 512
+  thresh: 0.5
+  weights: ''
+  gpus: [0, 1, 2, 3, 4, 5]
+  dolgnet_parameters:
+    input_dim: 3
+    hidden_dim: 2048
+    output_dim: 512
+    scale: 15
+    margin: 0.5
+    backbone_name: 'tf_efficientnet_b5'
+    local_branch_input_dim: 176
+    fc_1_input_dim: 512
+    drop_rate: 0
+    img_size: 512

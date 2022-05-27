@@ -1,0 +1,44 @@
+train_data:
+  dataset_name: 'happy_whale_dataset'
+  dataset_params:
+    root_path: '../../data/Train'
+    df_path: '../../data/backfin_train.csv'
+    sample_type: 'train'
+    val_size: 0.1
+    random_state: 42
+    transform:
+      resize:
+        resize_shape: 512
+      h_flip:
+        p: 0.35
+      rotation:
+        p: 0.35
+        degrees: 15
+    imgaug_cutout: True
+
+train_data_2:
+  dataset_name: 'happy_whale_dataset'
+  dataset_params:
+    root_path: '../../data/Train'
+    df_path: '../../data/backfin_train.csv'
+    sample_type: 'train'
+    val_size: 0.1
+    random_state: 42
+    transform:
+      resize:
+        resize_shape: 512
+    imgaug_cutout: False
+
+val_data:
+  dataset_name: 'happy_whale_dataset'
+  dataset_params:
+    root_path: '../../data/Train'
+    df_path: '../../data/backfin_train.csv'
+    sample_type: 'val'
+    val_size: 0.1
+    random_state: 42
+    transform:
+      resize:
+        resize_shape: 512
+    imgaug_cutout: False
+
